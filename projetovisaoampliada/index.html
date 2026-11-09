@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Visão Ampliada | Mentoria Financeira com Roberto</title>
+<meta name="description" content="Transforme a complexidade financeira do seu negócio em clareza, controle e previsibilidade com o método de Roberto." />
+<link rel="icon" type="image/png" href="assets/favicon-32.png" />
+<link rel="apple-touch-icon" href="assets/favicon-180.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div class="progressBar" aria-hidden="true">
+  <div class="progressBar__fill"></div>
+</div>
+
+<header class="siteNav">
+  <a class="siteNav__brand" href="#abertura" aria-label="Visão Ampliada: voltar ao início">
+    <img src="assets/logobranca.png" alt="Visão Ampliada" />
+  </a>
+  <nav class="siteNav__links" aria-label="Navegação principal">
+    <a href="#metodo">Método</a>
+    <a href="#mentorias">Mentorias</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="button siteNav__cta" href="#diagnostico">Diagnóstico</a>
+</header>
+
+<main>
+
+  <section class="hero" id="abertura" aria-labelledby="hero-title">
+    <div class="hero__backdrop" aria-hidden="true">
+      <canvas id="heroChart" class="hero__chart"></canvas>
+      <div class="hero__grid"></div>
+      <span class="hero__particle" style="left:12%;top:22%;animation-delay:0s;"></span>
+      <span class="hero__particle" style="left:78%;top:34%;animation-delay:1.2s;"></span>
+      <span class="hero__particle" style="left:34%;top:64%;animation-delay:2.4s;"></span>
+      <span class="hero__particle" style="left:60%;top:18%;animation-delay:3.1s;"></span>
+      <span class="hero__particle" style="left:88%;top:70%;animation-delay:0.6s;"></span>
+      <span class="hero__particle" style="left:20%;top:80%;animation-delay:1.8s;"></span>
+    </div>
+
+    <div class="hero__container">
+      <div class="hero__content">
+        <span class="eyebrow">Mentoria financeira</span>
+        <h1 class="hero__headline" id="hero-title">
+          Transforme seu Faturamento em <em>Lucro</em>.
+        </h1>
+        <p class="hero__subcopy">
+          Um método para transformar sua maneira de ver finanças. Diagnósticos, análises e
+          estratégias para escalar seus resultados.
+        </p>
+        <div class="hero__actions">
+          <a class="button" href="#diagnostico">Quero meu diagnóstico</a>
+          <a class="link--underline" href="#metodo">Conhecer o método</a>
+        </div>
+      </div>
+
+      <div class="hero__portraitCol">
+        <div class="portraitHalo">
+          <div class="portraitFrame">
+            <img class="portraitFrame__image" src="assets/robertohero.png" alt="Roberto Marques, mentor financeiro" />
+            <div class="portraitFrame__caption">
+              <strong>Roberto Marques</strong>
+              <span>Mentor financeiro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scrollCue" aria-hidden="true">
+      <i></i>
+      <span>Role para explorar</span>
+    </div>
+  </section>
+
+  <section class="section" id="roberto" aria-labelledby="roberto-title">
+    <div class="sectionInner roberto__grid">
+      <div class="roberto__photoStage">
+        <div class="portraitHalo">
+          <div class="roberto__photoFrame">
+            <img class="roberto__photoImage" src="assets/verboamarroberto.jpg" alt="Roberto Marques ao lado da placa do Verbo Amar" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="roberto__text">
+        <span class="eyebrow">Quem conduz o método</span>
+        <h2 class="roberto__name" id="roberto-title">Roberto Marques</h2>
+        <p class="roberto__role">Mentor financeiro &amp; consultor de negócios</p>
+        <ul class="roberto__credentials">
+          <li class="roberto__credentialItem"><span class="roberto__credentialMark" aria-hidden="true"></span> Especialista em gestão financeira para pequenas e médias empresas</li>
+          <li class="roberto__credentialItem"><span class="roberto__credentialMark" aria-hidden="true"></span> Já conduziu dezenas de diagnósticos e mentorias individuais</li>
+          <li class="roberto__credentialItem"><span class="roberto__credentialMark" aria-hidden="true"></span> Método próprio: Entender → Organizar → Decidir → Prever</li>
+        </ul>
+
+        <div class="experienceTrail">
+          <span class="eyebrow experienceTrail__label">Trajetória</span>
+          <div class="experienceTrail__row">
+            <button type="button" class="experienceTrail__navButton experienceTrail__navButton--prev" aria-label="Experiência anterior">‹</button>
+            <div class="experienceTrail__card">
+              <img class="experienceTrail__logo" src="assets/outbacklogo.png" alt="" />
+              <div class="experienceTrail__meta">
+                <strong></strong>
+                <span></span>
+              </div>
+            </div>
+            <button type="button" class="experienceTrail__navButton experienceTrail__navButton--next" aria-label="Próxima experiência">›</button>
+          </div>
+          <div class="experienceTrail__dots" role="tablist" aria-label="Etapas da trajetória">
+            <button type="button" class="experienceTrail__dot" aria-label="Experiência 1"></button>
+            <button type="button" class="experienceTrail__dot" aria-label="Experiência 2"></button>
+            <button type="button" class="experienceTrail__dot" aria-label="Experiência 3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tinted" id="palestras" aria-labelledby="palestras-title">
+    <div class="sectionInner">
+      <div class="sectionHead">
+        <span class="eyebrow">Em cena</span>
+        <h2 id="palestras-title">Palestras e eventos</h2>
+        <p>Eventos, palestras e imersões da Visão Ampliada.</p>
+      </div>
+      <div class="palestras__grid">
+        <figure class="palestras__tile palestras__tile--featured" data-reveal>
+          <img src="assets/formaturapalco.jpg" alt="Roberto com formandos de beca azul no palco de uma cerimônia de formatura" loading="lazy" />
+        </figure>
+        <figure class="palestras__tile palestras__tile--a" data-reveal>
+          <img src="assets/aulaprojecao.jpg" alt="Roberto apresentando um plano de ação financeiro para uma turma" loading="lazy" />
+        </figure>
+        <figure class="palestras__tile palestras__tile--tall" data-reveal>
+          <img src="assets/palestrapalco.jpg" alt="Roberto ministrando no palco sob luzes azuis" loading="lazy" />
+        </figure>
+        <figure class="palestras__tile palestras__tile--b" data-reveal>
+          <img src="assets/turmacurso.jpeg" alt="Roberto com uma turma durante um curso de gestão financeira" loading="lazy" />
+        </figure>
+        <figure class="palestras__tile palestras__tile--c" data-reveal>
+          <img src="assets/aulaturma.jpg" alt="Roberto conversando com participantes durante uma aula" loading="lazy" />
+        </figure>
+        <figure class="palestras__tile palestras__tile--d" data-reveal>
+          <img src="assets/turmacurso2.jpeg" alt="Roberto com participantes de uma formação em sala de aula" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="pinTrack method" id="metodoTrack" aria-labelledby="metodo-title">
+    <div class="pinTrack__sticky" id="metodo">
+      <div class="method__inner">
+        <div class="method__chartCol">
+          <span class="placeholderTag hero__illustrativeTag" style="position:absolute;right:0;top:0;">Gráfico ilustrativo</span>
+          <canvas id="metodoChart" class="method__chart" aria-hidden="true"></canvas>
+        </div>
+        <div>
+          <span class="eyebrow">O método</span>
+          <h2 class="visually-hidden" id="metodo-title">O método em quatro passos</h2>
+          <div class="method__stepStack">
+            <p id="metodoLive" class="visually-hidden" aria-live="polite"></p>
+            <div class="method__step is-current">
+              <span class="eyebrow mono-number method__stepNumber">01</span>
+              <h3 class="method__stepTitle">Entender</h3>
+              <p class="method__stepDesc">Mapeamos com clareza para onde o dinheiro do negócio realmente vai.</p>
+            </div>
+            <div class="method__step">
+              <span class="eyebrow mono-number method__stepNumber">02</span>
+              <h3 class="method__stepTitle">Organizar</h3>
+              <p class="method__stepDesc">Estruturamos processos e categorias que sustentam decisões futuras.</p>
+            </div>
+            <div class="method__step">
+              <span class="eyebrow mono-number method__stepNumber">03</span>
+              <h3 class="method__stepTitle">Decidir</h3>
+              <p class="method__stepDesc">Com os números organizados, cada decisão passa a ter base real.</p>
+            </div>
+            <div class="method__step">
+              <span class="eyebrow mono-number method__stepNumber">04</span>
+              <h3 class="method__stepTitle">Prever</h3>
+              <p class="method__stepDesc">O negócio ganha previsibilidade e espaço real para crescer.</p>
+            </div>
+          </div>
+          <div class="method__dots" aria-hidden="true">
+            <span class="method__dot is-active"></span>
+            <span class="method__dot"></span>
+            <span class="method__dot"></span>
+            <span class="method__dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="sectionInner">
+      <div class="sectionHead">
+        <span class="eyebrow">Perguntas frequentes</span>
+        <h2 id="faq-title">Antes de decidir</h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__trigger" aria-expanded="false">
+            <span>Qual o período da mentoria?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__panel"><div class="faq__panelInner"><p>O período inicial é de no mínimo 3 meses. Esse é o tempo necessário para percorrer com consistência as etapas de diagnóstico, organização e implementação das primeiras mudanças. A duração exata varia de acordo com a mentoria escolhida e o momento do seu negócio.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__trigger" aria-expanded="false">
+            <span>É possível ser online?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__panel"><div class="faq__panelInner"><p>Sim. Todo o acompanhamento pode ser feito de forma 100% online, com a mesma proximidade e profundidade de um atendimento presencial. Reuniões, diagnósticos e materiais são pensados para funcionar plenamente a distância.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__trigger" aria-expanded="false">
+            <span>O atendimento pode ser em qualquer lugar do Brasil?</span>
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__panel"><div class="faq__panelInner"><p>Sim, presencial e online. Atendemos empresários em todo o território nacional. Quando a agenda e a localização permitem, o acompanhamento pode incluir encontros presenciais, mas a distância nunca é um impeditivo para começar.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="mentorias" aria-labelledby="mentorias-title">
+    <div class="sectionInner">
+      <div class="sectionHead">
+        <span class="eyebrow">Mentorias</span>
+        <h2 id="mentorias-title">Escolha o acompanhamento ideal para o seu momento</h2>
+        <p>Quatro formatos de mentoria, cada um com profundidade e duração diferentes: do diagnóstico pessoal ao acompanhamento completo do negócio.</p>
+      </div>
+      <div class="plans__grid">
+        <article class="plans__card plans__card--pessoal">
+          <span class="eyebrow">Mentoria</span>
+          <h3 class="plans__title">Finanças Pessoais</h3>
+          <span class="plans__duration mono-number">2 meses</span>
+          <ul class="plans__features">
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Análise</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Diagnóstico</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Estratégias</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Painel de controle</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Atendimento</li>
+          </ul>
+          <a class="button button--ghost plans__cta" href="#diagnostico" data-mentoria="financas-pessoais">Quero essa mentoria</a>
+        </article>
+
+        <article class="plans__card plans__card--prata">
+          <span class="eyebrow">Mentoria</span>
+          <h3 class="plans__title">Prata</h3>
+          <span class="plans__duration mono-number">3 meses</span>
+          <ul class="plans__features">
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Análise</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Diagnóstico</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Estratégias</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Atendimento</li>
+          </ul>
+          <a class="button button--ghost plans__cta" href="#diagnostico" data-mentoria="prata">Quero essa mentoria</a>
+        </article>
+
+        <article class="plans__card plans__card--ouro">
+          <span class="eyebrow">Mentoria</span>
+          <h3 class="plans__title">Ouro</h3>
+          <span class="plans__duration mono-number">4 meses</span>
+          <ul class="plans__features">
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Análise</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Diagnóstico</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Estratégias</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Ebooks gratuitos</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Aulas para equipe</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Atendimento</li>
+          </ul>
+          <a class="button button--ghost plans__cta" href="#diagnostico" data-mentoria="ouro">Quero essa mentoria</a>
+        </article>
+
+        <article class="plans__card plans__card--premium">
+          <span class="eyebrow">Mentoria</span>
+          <h3 class="plans__title">Premium</h3>
+          <span class="plans__duration mono-number">6 meses</span>
+          <ul class="plans__features">
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Análise</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Diagnóstico</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Estratégias</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Ebooks gratuitos</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Aulas para equipe</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Treinamento</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Gerenciamento de DRE</li>
+            <li><span class="roberto__credentialMark" aria-hidden="true"></span> Atendimento</li>
+          </ul>
+          <a class="button button--ghost plans__cta" href="#diagnostico" data-mentoria="premium">Quero essa mentoria</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tinted" id="diagnostico" aria-labelledby="diagnostico-title">
+    <div class="sectionInner">
+      <div class="sectionHead" style="margin-left:auto;margin-right:auto;text-align:center;">
+        <span class="eyebrow">Diagnóstico</span>
+        <h2 id="diagnostico-title">Vamos entender o seu momento</h2>
+        <p>Responda três perguntas rápidas e envie seu diagnóstico diretamente para análise.</p>
+      </div>
+
+      <div class="diag">
+        <form class="diag__form" id="leadForm" novalidate>
+          <div class="diag__header">
+            <span class="diag__stepLabel mono-number">Etapa <span id="diagStepNum">01</span> / 03</span>
+            <div class="diag__bars" aria-hidden="true">
+              <span class="diag__bar is-active"></span>
+              <span class="diag__bar"></span>
+              <span class="diag__bar"></span>
+            </div>
+          </div>
+
+          <div class="diag__step is-active" data-step="0">
+            <span class="diag__index mono-number">01 →</span>
+            <label class="diag__question" for="leadName">Como você se chama?</label>
+            <input class="diag__input" type="text" id="leadName" name="name" autocomplete="name" placeholder="Seu nome completo" required />
+            <small class="diag__error" aria-live="polite"></small>
+          </div>
+
+          <div class="diag__step" data-step="1">
+            <span class="diag__index mono-number">02 →</span>
+            <label class="diag__question" for="leadEmail">Qual o seu melhor e-mail?</label>
+            <input class="diag__input" type="email" id="leadEmail" name="email" autocomplete="email" placeholder="voce@empresa.com.br" required />
+            <small class="diag__error" aria-live="polite"></small>
+          </div>
+
+          <div class="diag__step" data-step="2" role="radiogroup" aria-labelledby="leadSegmentLabel">
+            <span class="diag__index mono-number">03 →</span>
+            <span class="diag__question" id="leadSegmentLabel">Em qual segmento seu negócio atua?</span>
+            <div class="diag__chips">
+              <label class="diag__chip"><input type="radio" name="segment" value="Varejo" /><span><i class="mono-number">01</i>Varejo</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Serviços" /><span><i class="mono-number">02</i>Serviços</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Indústria" /><span><i class="mono-number">03</i>Indústria</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Tecnologia" /><span><i class="mono-number">04</i>Tecnologia</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Gastronomia" /><span><i class="mono-number">05</i>Gastronomia</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Saúde e bem-estar" /><span><i class="mono-number">06</i>Saúde e bem-estar</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Beleza e estética" /><span><i class="mono-number">07</i>Beleza e estética</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Educação" /><span><i class="mono-number">08</i>Educação</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Construção civil" /><span><i class="mono-number">09</i>Construção civil</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Imobiliário" /><span><i class="mono-number">10</i>Imobiliário</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Moda e vestuário" /><span><i class="mono-number">11</i>Moda e vestuário</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Agronegócio" /><span><i class="mono-number">12</i>Agronegócio</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Logística e transporte" /><span><i class="mono-number">13</i>Logística e transporte</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Automotivo" /><span><i class="mono-number">14</i>Automotivo</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Eventos e entretenimento" /><span><i class="mono-number">15</i>Eventos e entretenimento</span></label>
+              <label class="diag__chip"><input type="radio" name="segment" value="Outro" /><span><i class="mono-number">16</i>Outro</span></label>
+            </div>
+            <small class="diag__error" aria-live="polite"></small>
+          </div>
+
+          <div class="diag__nav">
+            <button type="button" class="button button--ghost diag__back" hidden>← Voltar</button>
+            <span class="diag__hint mono-number">Enter ↵ para avançar</span>
+            <button type="submit" class="button diag__next">Continuar →</button>
+          </div>
+        </form>
+
+        <div class="diag__success" id="leadFormSuccess" tabindex="-1">
+          <span class="diag__successIcon" aria-hidden="true">✓</span>
+          <h3>Diagnóstico enviado para o WhatsApp.</h3>
+          <p>Abrimos uma conversa com o Roberto já com os seus dados. É só tocar em enviar por lá.</p>
+          <a class="button leadForm__whatsappLink" href="#" target="_blank" rel="noopener">Abrir WhatsApp novamente</a>
+        </div>
+      </div>
+      <p class="diag__note">Seus dados são usados apenas para o contato sobre a mentoria.</p>
+    </div>
+  </section>
+
+  <section class="section" id="ebook" aria-labelledby="ebook-title">
+    <div class="sectionInner">
+      <div class="ebook__panel">
+        <div class="ebook__cover" aria-hidden="true">
+          <div class="ebook__book">
+            <span class="ebook__bookTag">E-book</span>
+            <svg class="ebook__bookChart" viewBox="0 0 120 64" fill="none">
+              <rect x="6" y="44" width="14" height="16" rx="2" />
+              <rect x="30" y="36" width="14" height="24" rx="2" />
+              <rect x="54" y="28" width="14" height="32" rx="2" />
+              <rect x="78" y="16" width="14" height="44" rx="2" />
+              <path d="M6 40 L37 30 L61 22 L100 6" />
+              <path d="M90 6 L100 6 L100 16" />
+            </svg>
+            <strong class="ebook__bookTitle">Transforme seu faturamento em lucro</strong>
+            <span class="ebook__bookAuthor">Visão Ampliada</span>
+          </div>
+        </div>
+        <div class="ebook__body">
+          <div class="ebook__text">
+            <span class="eyebrow">Material complementar</span>
+            <h2 id="ebook-title">Ebook: transforme seu faturamento em lucro</h2>
+            <p>Um guia prático para entender para onde vai o dinheiro do seu negócio e transformar o que entra em lucro de verdade.</p>
+          </div>
+          <a class="button button--ghost" id="ebookCta" href="https://visaoampliada360.hotmart.host/transforme-seu-faturamento-em-lucro-06963685-6cc6-4f94-bde5-bd712ba862ec" target="_blank" rel="noopener">Quero o ebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <img class="footer__logo" src="assets/logobranca.png" alt="Visão Ampliada" />
+  <span class="footer__copy">© <span id="footerYear"></span> Visão Ampliada. Todos os direitos reservados.</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
